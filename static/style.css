@@ -1,0 +1,98 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Mono:ital,wght@0,100;0,500;1,700&display=swap');
+
+
+* {font-family: monospace; margin: 0; padding: 0; box-sizing: border-box; text-decoration: none;}
+
+header {
+    background: #48e;
+    color: #fff;
+    text-align: center;
+    height: 4.5rem;
+}
+
+header h1 {
+    line-height: 4.5rem;
+}
+
+body {
+    position: relative;
+    min-height: 100vh;
+}
+
+main {
+    padding-bottom: 3.5rem;
+    margin: 1.5rem;
+}
+
+#todo-container {
+    overflow-y: auto;
+}
+
+#todo-container div {
+    display: flex;
+    width: fit-content;
+    margin-bottom: 1rem;
+}
+
+#todo-container p, a {
+    font-size: 1.5rem;
+    font-weight: 900;
+}
+
+#todo-container a{
+    background: #fff;
+    border-radius: 100%;
+    color: white;
+    border: 0.12rem solid #48e;
+    width: 1.7rem;
+    min-width: 1.7rem;
+    margin-right: 1rem;
+    height: 1.7rem;
+    min-height: 1.7rem;
+    max-height: 1.7rem;
+}
+
+#todo-container a:hover{
+    background: #59fe;
+}
+
+#todo-form {
+    display: flex;
+    width: 100%;
+
+}
+
+#todo-form input, button {
+    height: 3rem;
+    border: none;
+}
+
+#todo-form input{
+    font-size: 1.5rem;
+    width: 100%;
+}
+
+#todo-form input:focus {
+    outline: none;
+}
+
+#todo-form button {
+    float: right;
+    color: #fff;
+    background: #48e;
+}
+
+
+footer {
+    position: absolute;
+    width: 100%;
+    bottom: 0;
+    height: 3.5rem;
+    background: #48e;
+    text-align: center;
+}
+
+footer h3 {
+    color: white;
+    line-height: 3.5rem;
+}
