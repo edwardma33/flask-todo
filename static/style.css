@@ -4,7 +4,7 @@
 * {font-family: monospace; margin: 0; padding: 0; box-sizing: border-box; text-decoration: none;}
 
 header {
-    background: #48e;
+    background: #7ae;
     color: #fff;
     text-align: center;
     height: 4.5rem;
@@ -22,6 +22,42 @@ body {
 main {
     padding-bottom: 3.5rem;
     margin: 1.5rem;
+}
+
+#auth-form-container {
+    width: 100%;
+    text-align: center;
+}
+
+#auth-form-container input, button {
+    font-size: 2rem;
+    margin-bottom: 1rem;
+    border: none;
+}
+
+#auth-form-container input {
+    width: 20rem;
+}
+
+#auth-form-container button {
+    width: 9rem;
+    background: #7ae;
+    color: #fff;
+    border-radius: 0.5rem;
+}
+
+#logout-btn {
+    color: #fff;
+    background: #7ae;
+    padding: 0.5rem 1rem 0.5rem 1rem;
+    border-radius: 0.5rem;
+}
+
+#del-acct-btn {
+    color: #fff;
+    background: #f88;
+    padding: 0.5rem 1rem 0.5rem 1rem;
+    border-radius: 0.5rem;
 }
 
 #todo-container {
@@ -43,7 +79,7 @@ main {
     background: #fff;
     border-radius: 100%;
     color: white;
-    border: 0.12rem solid #48e;
+    border: 0.12rem solid #7ae;
     width: 1.7rem;
     min-width: 1.7rem;
     margin-right: 1rem;
@@ -57,6 +93,7 @@ main {
 }
 
 #todo-form {
+    margin-top: 3rem;
     display: flex;
     width: 100%;
 
@@ -72,6 +109,11 @@ main {
     width: 100%;
 }
 
+#todo-form button {
+    padding: 0 1rem 0 1rem;
+    border-radius: 0.5rem;
+}
+
 #todo-form input:focus {
     outline: none;
 }
@@ -79,7 +121,7 @@ main {
 #todo-form button {
     float: right;
     color: #fff;
-    background: #48e;
+    background: #7ae;
 }
 
 
@@ -88,7 +130,7 @@ footer {
     width: 100%;
     bottom: 0;
     height: 3.5rem;
-    background: #48e;
+    background: #7ae;
     text-align: center;
 }
 

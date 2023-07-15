@@ -1,6 +1,6 @@
 from flask import Flask, render_template, redirect, url_for, request, session
 from flask_socketio import SocketIO
-from database.sql import Todo, User, get_todos, delete_todo, sign_in, is_name_available
+from database.sql import Todo, User, get_todos, delete_todo, sign_in, is_name_available, delete_user
 
 app = Flask(__name__)
 app.config['SECRET_KEY'] = 'secret!'
@@ -47,6 +47,12 @@ def signup():
         return redirect(url_for('dashboard'))
     else:
         return redirect(url_for('index'))
+
+@app.route('/del_profile')
+def del_profile():
+    delete_user(session['username'])
+    session.pop('username', None)
+    return redirect(url_for('index'))
 
 @app.route('/add_todo', methods=['POST'])
 def add_todo():

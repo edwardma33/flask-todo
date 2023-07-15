@@ -20,7 +20,7 @@ def create_id():
 
 def get_todos(username):
     arr = []
-    todos = c.execute("SELECT * FROM todos WHERE user = ?", (username, )).fetchall()
+    todos = c.execute("SELECT * FROM todos WHERE username = ?", (username, )).fetchall()
     
     for i in todos:
         arr.append({
@@ -58,6 +58,12 @@ def sign_in(username, password):
         if username in user and password in user:
             return True
     return False
+
+def delete_user(username):
+    c.execute("DELETE FROM users WHERE username = ?", (username, ))
+    conn.commit()
+    c.execute("DELETE FROM todos WHERE username = ?", (username, ))
+    conn.commit()
 
 class User():
     def __init__(self, username, password) -> None:
