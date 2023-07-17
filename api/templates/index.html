@@ -1,0 +1,23 @@
+{% extends 'base.html' %}
+{% block title %}Dashboard{% endblock %}
+{% block content %}
+<div id="auth-form-container">
+    <form action="/login" method="post">
+        <input type="text" name="username" placeholder="username..." autocomplete="off" autocapitalize="off" maxlength="12">
+        <input type="text" name="password" placeholder="password..." autocomplete="off" autocapitalize="off" maxlength="12">
+        <br>
+        <button type="submit">Login</button>
+    </form>
+    <form action="/signup" method="post">
+        <input type="text" name="username" placeholder="username..." autocomplete="off" autocapitalize="off" maxlength="12">
+        <input type="text" name="password" placeholder="password..." autocomplete="off" autocapitalize="off" maxlength="12">
+        <br>
+        <button type="submit">Signup</button>
+    </form>
+</div>
+
+
+<h1>{{ test }}</h1>
+{% endblock %}
+
+ 

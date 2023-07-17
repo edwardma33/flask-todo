@@ -1,0 +1,146 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Mono:ital,wght@0,100;0,500;1,700&display=swap');
+
+
+* {font-family: monospace; margin: 0; padding: 0; box-sizing: border-box; text-decoration: none;}
+
+header {
+    background: #7ae;
+    color: #fff;
+    text-align: center;
+    height: 4.5rem;
+}
+
+header h1 {
+    line-height: 4.5rem;
+}
+
+body {
+    position: relative;
+    min-height: 100vh;
+}
+
+main {
+    padding-bottom: 3.5rem;
+    margin: 1.5rem;
+}
+
+#auth-form-container {
+    width: 100%;
+    text-align: center;
+}
+
+#auth-form-container input, button {
+    font-size: 2rem;
+    margin-bottom: 1rem;
+    border: none;
+}
+
+#auth-form-container input {
+    width: 20rem;
+}
+
+#auth-form-container button {
+    width: 9rem;
+    background: #7ae;
+    color: #fff;
+    border-radius: 0.5rem;
+}
+
+#logout-delprofile-container {
+    padding-bottom: 2rem;
+}
+
+#logout-btn {
+    color: #fff;
+    background: #7ae;
+    padding: 0.5rem 1rem 0.5rem 1rem;
+    border-radius: 0.5rem;
+    float: inline-start;
+}
+
+#del-acct-btn {
+    color: #fff;
+    background: #f88;
+    padding: 0.5rem 1rem 0.5rem 1rem;
+    border-radius: 0.5rem;
+    float: inline-end;
+}
+
+#todo-container {
+    overflow-y: auto;
+}
+
+#todo-container div {
+    display: flex;
+    width: fit-content;
+    margin-bottom: 1rem;
+}
+
+#todo-container p, a {
+    font-size: 1.5rem;
+    font-weight: 900;
+}
+
+#todo-container a{
+    background: #fff;
+    border-radius: 100%;
+    color: white;
+    border: 0.12rem solid #7ae;
+    width: 1.7rem;
+    min-width: 1.7rem;
+    margin-right: 1rem;
+    height: 1.7rem;
+    min-height: 1.7rem;
+    max-height: 1.7rem;
+}
+
+#todo-container a:hover{
+    background: #59fe;
+}
+
+#todo-form {
+    margin-top: 3rem;
+    display: flex;
+    width: 100%;
+
+}
+
+#todo-form input, button {
+    height: 3rem;
+    border: none;
+}
+
+#todo-form input{
+    font-size: 1.5rem;
+    width: 100%;
+}
+
+#todo-form button {
+    padding: 0 1rem 0 1rem;
+    border-radius: 0.5rem;
+}
+
+#todo-form input:focus {
+    outline: none;
+}
+
+#todo-form button {
+    float: right;
+    color: #fff;
+    background: #7ae;
+}
+
+
+footer {
+    position: absolute;
+    width: 100%;
+    bottom: 0;
+    height: 3.5rem;
+    background: #7ae;
+    text-align: center;
+}
+
+footer h3 {
+    color: white;
+    line-height: 3.5rem;
+}

@@ -1,0 +1,20 @@
+{% extends 'base.html' %}
+{% block title %}Dashboard{% endblock %}
+{% block content %}
+<div id="logout-delprofile-container">
+    <a href="/logout" id="logout-btn">Logout</a>
+    <a href="/del_profile" id="del-acct-btn">Delete Profile</a>
+</div>
+
+<form action="/add_todo" method="post" id="todo-form">
+    <input type="text" placeholder="New Todo..." name="body" autocomplete="off" maxlength="65">
+    <button type="submit">Add</button>
+</form>
+<div id="todo-container">
+    {% for i in todos %}
+    <div>
+        <a href="/del_todo/{{ i.id }}"></a><p>{{ i.body }}</p>
+    </div>
+    {% endfor %}
+</div>
+{% endblock %}
